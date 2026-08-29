@@ -1,0 +1,11 @@
+global using System.Collections;
+global using System.ComponentModel;
+global using System.Diagnostics.CodeAnalysis;
+global using System.Globalization;
+global using System.Linq.Expressions;
+global using System.Reflection;
+global using System.Runtime.CompilerServices;
+global using System.Text.RegularExpressions;
+global using Microsoft.Extensions.DependencyInjection;
+global using Microsoft.Maui.Controls.Xaml;
+global using Microsoft.Maui.Hosting;

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:v="http://schemas.mauiessentials.dev/formvalidation"
+             xmlns:local="clr-namespace:Plugin.Maui.FormValidation.Sample"
+             x:Class="Plugin.Maui.FormValidation.Sample.MainPage"
+             x:DataType="local:SignUpViewModel"
+             Title="FormValidation"
+             Padding="20">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="4">
+            <Label Text="Create account" FontSize="28" FontAttributes="Bold" Margin="0,0,0,4" />
+            <Label Text="Rules live in the view-model. The Entry only names the property."
+                   TextColor="{StaticResource Gray500}"
+                   Margin="0,0,0,12" />
+
+            <Label Text="Email" FontAttributes="Bold" />
+            <Entry Placeholder="you@example.com"
+                   Keyboard="Email"
+                   Text="{Binding Email}"
+                   v:Validation.For="Email" />
+            <Label v:Validation.MessageFor="Email" FontSize="12" IsVisible="False" />
+
+            <Label Text="Phone" FontAttributes="Bold" Margin="0,8,0,0" />
+            <Entry Placeholder="+1 555 123 4567"
+                   Keyboard="Telephone"
+                   Text="{Binding Phone}"
+                   v:Validation.For="Phone" />
+            <Label v:Validation.MessageFor="Phone" FontSize="12" IsVisible="False" />
+
+            <Label Text="Website" FontAttributes="Bold" Margin="0,8,0,0" />
+            <Entry Placeholder="https://example.com"
+                   Keyboard="Url"
+                   Text="{Binding Website}"
+                   v:Validation.For="Website" />
+            <Label v:Validation.MessageFor="Website" FontSize="12" IsVisible="False" />
+
+            <Label Text="Age" FontAttributes="Bold" Margin="0,8,0,0" />
+            <Entry Placeholder="18–99"
+                   Keyboard="Numeric"
+                   Text="{Binding Age}"
+                   v:Validation.For="Age" />
+            <Label v:Validation.MessageFor="Age" FontSize="12" IsVisible="False" />
+
+            <Label Text="Username" FontAttributes="Bold" Margin="0,8,0,0" />
+            <Entry Placeholder="Avoid admin or taken"
+                   Text="{Binding Username}"
+                   v:Validation.For="Username" />
+            <Label v:Validation.MessageFor="Username" FontSize="12" IsVisible="False" />
+
+            <Label Text="Password" FontAttributes="Bold" Margin="0,8,0,0" />
+            <Entry IsPassword="True"
+                   Placeholder="8+ characters, one uppercase"
+                   Text="{Binding Password}"
+                   v:Validation.For="Password" />
+            <Label v:Validation.MessageFor="Password" FontSize="12" IsVisible="False" />
+
+            <Label Text="Confirm password" FontAttributes="Bold" Margin="0,8,0,0" />
+            <Entry IsPassword="True"
+                   Placeholder="Repeat password"
+                   Text="{Binding ConfirmPassword}"
+                   v:Validation.For="ConfirmPassword" />
+            <Label v:Validation.MessageFor="ConfirmPassword" FontSize="12" IsVisible="False" />
+
+            <HorizontalStackLayout Spacing="12" Margin="0,12,0,0">
+                <Switch IsToggled="{Binding IsBusiness}" />
+                <Label Text="Business account" VerticalOptions="Center" />
+            </HorizontalStackLayout>
+
+            <Label Text="Company" FontAttributes="Bold" />
+            <Entry Placeholder="Required when business is on"
+                   Text="{Binding CompanyName}"
+                   v:Validation.For="CompanyName" />
+            <Label v:Validation.MessageFor="CompanyName" FontSize="12" IsVisible="False" />
+
+            <Button Text="Create account"
+                    Margin="0,16,0,8"
+                    Clicked="OnSubmitClicked" />
+
+            <Label Text="{Binding Status}"
+                   FontSize="13"
+                   TextColor="{StaticResource Gray600}" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
