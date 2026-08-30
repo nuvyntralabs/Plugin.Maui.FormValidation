@@ -2,10 +2,10 @@
 
 Mobile-first form validation for .NET MAUI: fluent rules, conditional / async / server checks, and Validation.For attached-property bindings.
 
-Repository: https://github.com/NiladriPadhy/Plugin.Maui.FormValidation
+Repository: https://github.com/nuvyntralabs/Plugin.Maui.FormValidation
 NuGet: https://www.nuget.org/packages/Plugin.Maui.FormValidation
 Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-form-validation
-Catalog: https://github.com/NiladriPadhy/MauiEssentials
+Catalog: https://github.com/nuvyntralabs/MauiEssentials
 License: MIT
 
 ## Supported versions
@@ -32,9 +32,9 @@ Registration: `UseMauiFormValidation` (optional) — see README.md.
 
 ## Documentation
 
-https://github.com/NiladriPadhy/Plugin.Maui.FormValidation
-https://github.com/NiladriPadhy/Plugin.Maui.FormValidation#readme
+https://github.com/nuvyntralabs/Plugin.Maui.FormValidation
+https://github.com/nuvyntralabs/Plugin.Maui.FormValidation#readme
 
 ## Source
 
-https://github.com/NiladriPadhy/Plugin.Maui.FormValidation
+https://github.com/nuvyntralabs/Plugin.Maui.FormValidation

@@ -24,11 +24,11 @@
     <Copyright>Copyright © 2026 Niladri</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageProjectUrl>https://github.com/NiladriPadhy/Plugin.Maui.FormValidation</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/NiladriPadhy/Plugin.Maui.FormValidation</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/nuvyntralabs/Plugin.Maui.FormValidation</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/nuvyntralabs/Plugin.Maui.FormValidation</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.0.1</Version>
-    <PackageReleaseNotes>Publish a matching symbol package (snupkg) with this build.</PackageReleaseNotes>
+    <Version>1.0.2</Version>
+    <PackageReleaseNotes>Repository moved to nuvyntralabs. Package project and repository URLs updated.</PackageReleaseNotes>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>

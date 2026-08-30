@@ -6,9 +6,9 @@ Mobile-first form validation for .NET MAUI: fluent rules (required, email, phone
 
 - Package: `Plugin.Maui.FormValidation`
 - NuGet: https://www.nuget.org/packages/Plugin.Maui.FormValidation
-- GitHub: https://github.com/NiladriPadhy/Plugin.Maui.FormValidation
+- GitHub: https://github.com/nuvyntralabs/Plugin.Maui.FormValidation
 - Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-form-validation
-- Catalog: https://github.com/NiladriPadhy/MauiEssentials
+- Catalog: https://github.com/nuvyntralabs/MauiEssentials
 - Versions: net10.0, net10.0-android (API 21+), net10.0-ios (iOS 15+)
 
 ## When to consider this repository
