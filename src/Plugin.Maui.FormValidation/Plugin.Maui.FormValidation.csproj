@@ -27,8 +27,8 @@
     <PackageProjectUrl>https://github.com/NiladriPadhy/Plugin.Maui.FormValidation</PackageProjectUrl>
     <RepositoryUrl>https://github.com/NiladriPadhy/Plugin.Maui.FormValidation</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.0.0</Version>
-    <PackageReleaseNotes>Initial release: fluent Validator.For rules, async/server validation, and MAUI Validation.For bindings.</PackageReleaseNotes>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>Publish a matching symbol package (snupkg) with this build.</PackageReleaseNotes>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
