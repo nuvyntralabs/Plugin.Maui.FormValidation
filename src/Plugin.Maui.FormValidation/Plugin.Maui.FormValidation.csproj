@@ -1,7 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net10.0;net10.0-android;net10.0-ios</TargetFrameworks>
+    <TargetFrameworks>net10.0;net10.0-android;net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
+    <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net10.0-windows10.0.19041.0</TargetFrameworks>
     <UseMaui>true</UseMaui>
     <SingleProject>true</SingleProject>
     <SkipValidateMauiImplicitPackageReferences>true</SkipValidateMauiImplicitPackageReferences>
@@ -12,13 +13,16 @@
 
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+    <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
+    <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+    <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 
     <RootNamespace>Plugin.Maui.FormValidation</RootNamespace>
     <AssemblyName>Plugin.Maui.FormValidation</AssemblyName>
     <PackageId>Plugin.Maui.FormValidation</PackageId>
     <Title>.NET MAUI FormValidation — mobile-first fluent validation</Title>
-    <Description>Mobile-first form validation for .NET MAUI on iOS and Android: fluent rules (required, email, phone, URL, numeric, regex, min/max), conditional / async / server validation, INotifyDataErrorInfo, and Validation.For attached-property bindings.</Description>
-    <PackageTags>dotnet-maui;maui;maui-plugin;maui-utilities;cross-platform;android;ios;nuget;mauiessentials;validation;form-validation;fluent-validation;mvvm;inotifydataerrorinfo;email;phone;regex</PackageTags>
+    <Description>Mobile-first form validation for .NET MAUI on Android, iOS, Mac Catalyst, and Windows: fluent rules (required, email, phone, URL, numeric, regex, min/max), conditional / async / server validation, INotifyDataErrorInfo, and Validation.For attached-property bindings.</Description>
+    <PackageTags>dotnet-maui;maui;maui-plugin;maui-utilities;cross-platform;android;ios;maccatalyst;windows;nuget;mauiessentials;validation;form-validation;fluent-validation;mvvm;inotifydataerrorinfo;email;phone;regex</PackageTags>
     <Authors>Niladri</Authors>
     <Company>MauiEssentials</Company>
     <Copyright>Copyright © 2026 Niladri</Copyright>
@@ -27,8 +31,8 @@
     <PackageProjectUrl>https://nuvyntralabs.github.io/packages/plugin-maui-form-validation/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/nuvyntralabs/Plugin.Maui.FormValidation</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.0.3</Version>
-    <PackageReleaseNotes>Point PackageProjectUrl at the Nuvyntra Labs package page.</PackageReleaseNotes>
+    <Version>1.0.4</Version>
+    <PackageReleaseNotes>Add Mac Catalyst and Windows TFMs for the shared (non-native) implementation.</PackageReleaseNotes>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
